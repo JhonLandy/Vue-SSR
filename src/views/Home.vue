@@ -13,6 +13,9 @@ export default {
   name: 'Home',
   components: {
     HelloWorld
+  },
+  asyncData({store}) {
+     return store.dispatch('getData');
   }
 }
 </script>
